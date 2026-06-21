@@ -10,7 +10,7 @@ $(document).ready(function() {
         $("#saldo").text("$ " + formatearMoneda(saldo)+ " CLP");
     } else {
         localStorage.setItem("saldo", "0");
-        $("#saldo").text("$CLP 0");
+        $("#saldo").text("$ 0 CLP");
     }
 
 });

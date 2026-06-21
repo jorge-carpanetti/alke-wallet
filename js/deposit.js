@@ -29,7 +29,7 @@ $(document).ready(function() {
 
         localStorage.setItem("saldo", saldo + monto);
 
-        guardarMovimiento("Depósito: +$CLP " + formatearMoneda(monto));
+        guardarMovimiento("Depósito: +$ " + formatearMoneda(monto)+ " CLP");
 
         $("#mensajeDeposito").html(
             "<div class='alert alert-success mt-3'> Depósito por $ " + formatearMoneda(monto) + " CLP realizado. Redirigiendo al menú...</div>");   
