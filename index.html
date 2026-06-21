@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Tu Banco Digital</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #002255;">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">Alke Wallet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
+                        <a href="login.html" class="btn btn-light font-weight-bold px-4 text-primary shadow-sm">Banca en Línea</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bancoCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li data-target="#bancoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bancoCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img src="assets/foto_panoramica_santiago_1.jpg" alt="Panorámica de Santiago de Chile">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-left">
+                    <div class="container">
+                        <h1 class="display-4 font-weight-bold">Conectamos tus metas</h1>
+                        <p class="lead d-none d-sm-block">Una solución digital robusta y segura diseñada de norte a sur.</p>
+                        <a href="login.html" class="btn btn-primary btn-lg font-weight-bold px-4 mt-3" style="background-color: #0044aa; border: none;">Hazte Cliente</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/foto_banco_central_chile_1.jpg" alt="Fachada Banco Central de Chile">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-left">
+                    <div class="container">
+                        <h1 class="display-4 font-weight-bold">Respaldo e Innovación</h1>
+                        <p class="lead d-none d-sm-block">Operamos bajo los más altos estándares de protección de datos del mercado financiero.</p>
+                        <a href="login.html" class="btn btn-outline-light btn-lg font-weight-bold px-4 mt-3">Ingresar a mi Banco</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <a class="carousel-control-prev" href="#bancoCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#bancoCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="container py-5 my-4">
+        <h2 class="text-center mb-2 font-weight-light">Descubre nuestras <b>Soluciones</b></h2>
+        <p class="text-center text-muted mb-5">Herramientas ágiles para administrar tus finanzas personales y comerciales.</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 rounded-lg">
+                    <div class="card-img-container">
+                        <img src="assets/foto_trabajador_escritorio_1.jpg" alt="Profesional trabajando en plataforma digital">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title font-weight-bold" style="color: #002255;">Cuenta Corriente</h5>
+                        <p class="card-text text-muted small">Recibe tus ingresos con costo de mantención cero y disfruta de atención ejecutiva preferencial 100% remota.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 rounded-lg">
+                    <div class="card-img-container">
+                        <img src="assets/foto_hi5_negocio_1.jpg" alt="Cierre de trato comercial o negocio exitoso">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title font-weight-bold" style="color: #002255;">Impulsa tu Pyme</h5>
+                        <p class="card-text text-muted small">Accede a financiamiento comercial ágil, herramientas de cobro integrado y controla los movimientos de tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 rounded-lg">
+                    <div class="card-img-container">
+                        <img src="assets/foto_moneda_zoom_moneda_10pesos_1.jpg" alt="Monedas chilenas enfocadas en detalle">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title font-weight-bold" style="color: #002255;">Planes de Ahorro</h5>
+                        <p class="card-text text-muted small">Optimiza tus excedentes en pesos con nuestros depósitos a plazo fijo y fondos mutuos estructurados en moneda local.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light py-4" style="background-color: #111122;">
+        <div class="container text-center text-md-left">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <span class="font-weight-bold">Alke Wallet Digital</span>
+                    <p class="mb-0 text-muted small">Infraestructura financiera Dinámica orientada al usuario.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-muted small">
+                    <p class="mb-0">&copy; 2026 Alke Wallet. Desarrollado bajo estándares académicos para Alkemy.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+</body>
+</html>

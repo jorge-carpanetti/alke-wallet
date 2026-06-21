@@ -1,7 +1,13 @@
 $(document).ready(function() {
     
-    if(localStorage.getItem("saldo")) {
-        $("#saldo").text("$ " + localStorage.getItem("saldo")+ " CLP");
+    function formatearMoneda(saldo) {
+    return saldo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    let saldo = localStorage.getItem("saldo");
+
+    if(saldo) {
+        $("#saldo").text("$ " + formatearMoneda(saldo)+ " CLP");
     } else {
         localStorage.setItem("saldo", "0");
         $("#saldo").text("$CLP 0");

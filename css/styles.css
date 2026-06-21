@@ -1,0 +1,67 @@
+/* index.html*/
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* --- Ajustes Carrusel --- */
+.carousel-item {
+    height: 65vh;
+    min-height: 400px;
+    background-color: #001533;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Capa oscura para ver textos del carrusel */
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 21, 51, 0.55);
+}
+
+.carousel-caption {
+    bottom: 25%;
+    z-index: 2;
+}
+
+/* --- Formateo de Tarjetas de Beneficios --- */
+.card-img-container {
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Pequeña animación hover */
+.card:hover .card-img-container img {
+    transform: scale(1.05);
+}
+
+/* login.html*/
+
+.login-bg {
+    background-image: url('../assets/foto_paisaje_chile_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+        
+.login-card-glass {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(5px);
+    border: none;
+}

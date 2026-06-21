@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    function formatearMoneda(monto) {
+    return monto.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
     function guardarMovimiento(descripcion) {
         let historialAnterior = localStorage.getItem("movimientos");
         
@@ -40,10 +44,10 @@ $(document).ready(function() {
 
         localStorage.setItem("saldo", saldo - monto);
 
-        guardarMovimiento("Transferencia a " + contacto + ": -$CLP " + monto);
+        guardarMovimiento("Transferencia a " + contacto + ": -$CLP " + formatearMoneda(monto));
 
         $("#resultado").html(
-            "<div class='alert alert-success mt-3'> Transferencia por $ " + monto + " CLP enviada a " + contacto + ". Redirigiendo al menú...</div>"
+            "<div class='alert alert-success mt-3'> Transferencia por $ " + formatearMoneda(monto) + " CLP enviada a " + contacto + ". Redirigiendo al menú...</div>"
         );
 
         $("#sendForm")[0].reset();
