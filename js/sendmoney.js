@@ -44,7 +44,7 @@ $(document).ready(function() {
 
         localStorage.setItem("saldo", saldo - monto);
 
-        guardarMovimiento("Transferencia a " + contacto + ": -$CLP " + formatearMoneda(monto));
+        guardarMovimiento("Transferencia a " + contacto + ": -$ " + formatearMoneda(monto)+ " CLP");
 
         $("#resultado").html(
             "<div class='alert alert-success mt-3'> Transferencia por $ " + formatearMoneda(monto) + " CLP enviada a " + contacto + ". Redirigiendo al menú...</div>"
