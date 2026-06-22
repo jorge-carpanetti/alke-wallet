@@ -37,3 +37,6 @@ Como parte de mi flujo de trabajo, integre el uso de modelos de lenguaje para:
 
 ## 📝 Registro de Cambios Técnicos
 * **Mejora en UX (Formateo de Moneda):** Se implementó una función de formateo para incluir el divisor de miles (.) en las cifras presentadas en pantalla. Esto mejora significativamente la legibilidad de los montos financieros en la interfaz, evitando errores de interpretación en transacciones de alto valor.
+
+DISCLAIMER
+* TODAS LAS FOTOS UTILIZADAS SE OBTUBIERON DESDE https://unsplash.com/.
