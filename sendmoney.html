@@ -18,17 +18,33 @@
 
         <div class="card-body">
 
+            <h5 class="font-weight-bold">Agenda de Contactos</h5>
+            <p class="text-muted small">Agrega un nuevo contacto o selecciona uno guardado para enviarle dinero.</p>
+
+            <div class="input-group mb-3">
+                <input type="text" id="nuevoContacto" class="form-control" placeholder="Nombre del nuevo contacto">
+                <div class="input-group-append">
+                    <button id="btnAgregarContacto" class="btn btn-success" type="button">Agregar nuevo contacto</button>
+                </div>
+            </div>
+
+            <label>Mis contactos</label>
+            <div id="listaContactos" class="list-group mb-3"></div>
+
+            <hr class="my-4">
+
             <h2 class="text-center mb-4">
                 Transferencia
             </h2>
 
             <form id="sendForm">
 
-                <div class="form-group">
+                <div class="form-group autocomplete-container">
                     <label>
-                        Contacto
+                        Contacto destino
                     </label>
-                    <input type="text" id="contacto" class="form-control" placeholder="Nombre contacto" required>
+                    <input type="text" id="contacto" class="form-control" placeholder="Nombre contacto" required autocomplete="off">
+                    <div id="sugerencias" class="list-group autocomplete-suggestions"></div>
                 </div>
 
                 <div class="form-group">

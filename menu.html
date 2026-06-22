@@ -13,10 +13,19 @@
 
 <body>
 
-<nav class="navbar navbar-dark" style="background-color: #002255;">
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary-dark">
     <div class="container">
         <span class="navbar-brand font-weight-bold">Alke Wallet</span>
-        <a href="login.html" class="btn btn-outline-light">Salir</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="login.html" class="btn btn-outline-light btn-sm my-2 my-sm-0">Salir</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -27,7 +36,7 @@
             <h3>Saldo Disponible</h3>
 
             <h1 id="saldo">
-                $CLP 0
+                $ 0 CLP
             </h1>
         </div>
     </div>
@@ -35,13 +44,13 @@
     <div class="row mt-4">
 
         <div class="col-md-4 mb-3">
-            <a href="deposit.html" class="btn btn-success btn-block btn-lg" style="background-color: #00aa11; color: white;">
+            <a href="deposit.html" class="btn btn-success-custom btn-block btn-lg">
                 Depositar
             </a>
         </div>
 
         <div class="col-md-4 mb-3">
-            <a href="sendmoney.html" class="btn btn-primary btn-block btn-lg" style="background-color: #0044aa; color: white;">
+            <a href="sendmoney.html" class="btn btn-primary-custom btn-block btn-lg">
                 Enviar Dinero
             </a>
         </div>
