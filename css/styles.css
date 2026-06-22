@@ -50,6 +50,52 @@ body {
     transform: scale(1.05);
 }
 
+/* --- Clases utilitarias para navbar, botones y footer --- */
+.bg-primary-dark {
+    background-color: #002255;
+}
+
+.btn-primary-custom {
+    background-color: #0044aa;
+    color: white;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #003380;
+    color: white;
+}
+
+.btn-success-custom {
+    background-color: #00aa11;
+    color: white;
+}
+
+.btn-success-custom:hover {
+    background-color: #00880e;
+    color: white;
+}
+
+.footer-dark {
+    background-color: #111122;
+}
+
+.card-title-primary {
+    color: #002255;
+}
+
+/* --- Contenedor de autocompletado --- */
+.autocomplete-container {
+    position: relative;
+}
+
+.autocomplete-suggestions {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    display: none;
+}
+
 /* login.html*/
 
 .login-bg {
